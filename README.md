@@ -1,30 +1,29 @@
-# 🎶 NivaBand 888
+# 🎼 NivaBand 888
 
-**AI Music Generator – Powered by Bark + Riffusion + Niva Logic**
-
-NivaBand888 lets you create full-length AI-generated soundscapes, melodies, or vocal performances directly from text prompts.
+An AI-powered music generator built with **Next.js + TailwindCSS (frontend)** and **Node.js + Express (backend)** using Hugging Face Bark / Riffusion models.
 
 ---
 
-### ⚙️ Features
-- 🎵 Generate instrumentals or vocals using Hugging Face APIs (free-tier)
-- 🧠 Intelligent prompt routing (Bark for vocals, Riffusion for instrumentals)
-- 🔊 Built-in waveform player & download
-- 💾 No sign-up, no database — instant download
-- 🎨 Modern gradient UI (Next.js + TailwindCSS + Framer Motion)
-- 🔁 Unlimited audio time via loop stitching (no paywall)
+## ⚙️ Features
+- 🎵 Generate instrumentals or vocals from text prompts
+- 🎤 Real-time audio playback in browser
+- 🧠 Backend auto-routes prompts to Bark model
+- 🔁 Unlimited audio time (segment stitching)
+- 💾 Download or play instantly, no login
 
 ---
 
-### 🧩 Tech Stack
-**Frontend:** Next.js, TailwindCSS, Framer Motion  
-**Backend:** Node.js, Express, Hugging Face Inference API  
-**Deployment:** Vercel (Frontend), Render (Backend)
+## 🧩 Tech Stack
+- **Frontend:** Next.js, TailwindCSS  
+- **Backend:** Node.js, Express, Hugging Face API  
+- **Deployment:** Vercel (frontend), Render (backend)
 
 ---
 
-### 🚀 Quick Setup
-1️⃣ Clone both repos:
+## 🚀 Quick Setup
+
+### 1️⃣ Backend
 ```bash
-git clone https://github.com/YOURUSERNAME/NivaBand888-frontend
-git clone https://github.com/YOURUSERNAME/NivaBand888-backend
+cd backend
+npm install
+npm start
