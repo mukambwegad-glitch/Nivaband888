@@ -1,10 +1,9 @@
-# 🎶 NivaBand 888 Frontend
+# 🎨 NivaBand Frontend
 
-Fully responsive AI Music Generator UI built with Next.js + Tailwind.
+Frontend for NivaBand's AI music generator using Next.js and TailwindCSS.
 
-## Setup
-1. `npm install`
-2. Update backend URL in `pages/index.js`
-3. `npm run dev`
+## ▶️ Run Locally
 
-Deploy on [Vercel](https://vercel.com).
+```bash
+npm install
+npm run dev
