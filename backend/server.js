@@ -1,21 +1,15 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import generateRoute from "./routes/generate.js";
+import soundRoute from "./routes/soundRoute.js";
 
 dotenv.config();
-
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 🛠 Main API route
-app.use("/api/generate", generateRoute);
+// Routes
+app.use("/api/sound", soundRoute);
 
-// 🩵 Health check
-app.get("/", (req, res) => {
-  res.send("🎧 NivaBand 888 Backend is alive and singing!");
-});
-
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`🚀 Backend running on port ${PORT}`));
