@@ -9,7 +9,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// 🛠 Main API route
 app.use("/api/generate", generateRoute);
 
+// 🩵 Health check
+app.get("/", (req, res) => {
+  res.send("🎧 NivaBand 888 Backend is alive and singing!");
+});
+
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 NivaBand backend running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Backend running on port ${PORT}`));
