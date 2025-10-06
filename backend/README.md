@@ -1,10 +1,9 @@
-# 🎶 NivaBand 888 Backend
-Free AI music backend powered by Hugging Face (Bark + Riffusion).  
-Handles unlimited segment generation using looping merge strategy.
+# 🎧 NivaBand Backend
 
-## Setup
-1. `npm install`
-2. Create `.env` from `.env.example`
-3. Run: `npm start`
+A lightweight Express.js server that connects to Hugging Face's Bark model for text-to-audio generation.
 
-Deploy free on Render or Fly.io.
+## ▶️ Run Locally
+
+```bash
+npm install
+npm start
