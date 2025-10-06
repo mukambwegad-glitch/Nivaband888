@@ -1,19 +1,16 @@
 ---
 
-### ⚙️ Final `.gitignore` (for both frontend & backend)
+### 📝 `.gitignore` for both frontend & backend
 
-Replace your existing one with this cleaned version:
+Create `.gitignore` in both `frontend/` and `backend/`:
 
 ```gitignore
-# Node dependencies
+# Node modules
 node_modules/
 
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Environment variables
+.env
+.env.local
 
 # Build output
 .next/
@@ -21,24 +18,11 @@ out/
 dist/
 build/
 
-# Local environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Misc
+# OS files
 .DS_Store
-*.swp
-*.swo
-
-# IDE
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Lock files (optional)
-package-lock.json
-yarn.lock
+Thumbs.db
